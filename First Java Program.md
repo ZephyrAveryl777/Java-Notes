@@ -30,7 +30,7 @@ Output: Hello World
   - If several words are used to form a name of the class, each inner word's first letter
 should be in Upper Case.
   - Example: class MyFirstJavaClass
-- **Method Names** - 
+- **Method Names** 
   - All method names should start with a Lower Case letter.
   - If several words are used to form the name of the method, then each inner word's
 first letter should be in Upper Case.
