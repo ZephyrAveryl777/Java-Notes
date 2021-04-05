@@ -1,2 +1,2 @@
 # Java-Notes
-<img src="http://sahet.net/src/software/Java-duke.jpg" height="500px" width="500px" align="centre">
+<img src="http://sahet.net/src/software/Java-duke.jpg" alt="java mascot logo " height="500px" width="500px" style="align:center"/>
