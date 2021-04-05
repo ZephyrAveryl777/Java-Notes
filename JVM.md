@@ -70,5 +70,18 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
     - loads the classfiles from classpath. 
     - by default set to current directory.
     - can change classpath using "-cp" or "-classpath" switch also known as Application classloader.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/jvmclassloader.jpg" alt="classloader" height="300px" align="center">
+  <h3 align="center">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/jvmclassloader.jpg" alt="classloader" height="300px" align="center">
+   </h3>
+2. **JVM Memory**:
+    - **Method area**: 
+       - all class level information (class name,immediate parent class name, methods and variables information) are stored 
+       - only one memory area per JVM & its a shared resource. 
+    - **Heap area**: 
+        - information of all objects is stored in heap area. 
+        - only one heaparea, shared resource. 
+    - **Stacked area**:
+        - for every thread, one run-time stack is created by JVM and stored here. 
+         
+
  
