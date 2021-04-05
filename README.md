@@ -4,6 +4,6 @@
 </p>
 <hr>
 <h1 align="center">
-   <img src="http://cr.openjdk.java.net/~jeff/Duke/png/ChezDuke.png" align="center" height="475px" alt= "Go Logo" />
+   <img src="http://cr.openjdk.java.net/~jeff/Duke/png/ChezDuke.png" height="475px" alt= "Java with Mascot Logo" />
 </h1>
 <hr>
