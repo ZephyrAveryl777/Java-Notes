@@ -20,7 +20,7 @@ class Hello{
 Output: Hello World
 */
 ````
-> save the file as <FileName>.java, To compile: `**javac <FileName>.java**`, To execute: `**java <FileName>**`
+> save the file as <FileName>.java, To compile: **`javac <FileName>.java`**, To execute: **`java <FileName>`**
 --- 
 ### Paramaters used in First Java Program
 - **Case Sensitivity** 
