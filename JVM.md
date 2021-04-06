@@ -100,7 +100,7 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
 </h3>
 
 3. **Execution Engine**:
-    - executes the `**.class(bytecode)**` 
+    - executes the **`.class(bytecode)`** 
     - reads bytecode line by line, uses data and information present in various memory area and executes instructions and has three parts.
     - **Interpreter**:
         - interprets the bytecode line by line & executes. 
@@ -117,5 +117,4 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
     - enables JVM to call C/C++ libraries and vice versa, which may be specific to hardware.
 5. **Native Method Libraries**:
     - collection of the Native Libraries(C,C++) required by the Execution Engine.
-
- 
+----
