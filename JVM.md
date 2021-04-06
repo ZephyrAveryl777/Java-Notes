@@ -33,14 +33,14 @@ JVM provides definitions for :
 
 <h3 align="center">
 <img src="https://static.javatpoint.com/images/jvm-architecture.png" alt="JVM structure" height="500px" align="center">
-<h3>
+</h3>
     
 Internal architecture of JVM is made of classloader,memory area, execution engine etc.
     
 1. **Classloader**:
     - subsystem of JVM used to load class files. 
     - program first loaded by the classloader while running the program 
-    - main functionality is **Loading**, **Linking** & **Initalization**.
+    - main functionality is **Loading**, **Linking** & **Initalization**. 
     - **Loading**: following informations are checked when a classloader reads the ".class" file, 
         - fully qualified name of the loaded class and its immediate parent class.
         - Whether the ".class" file is related to Class or Interface or Enum.
@@ -53,7 +53,7 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
             - JVM allocates memory for class variables and initalizing the memory to default values
         - **Resolution**: 
             - Porcess of replacing symbolic references from type with direct reference. 
-            - done by searching into the method area to locate the referenced entity.
+            - done by searching into the method area to locate the referenced entity.    
     - **Initalization**: 
         - static variables are assigned with their values defined in code and static block (if any).
         - executed from top to bottom in a class 
