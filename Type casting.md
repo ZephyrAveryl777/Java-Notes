@@ -14,4 +14,39 @@ In Java, there are two types of casting:
 </h3>
 
 ---
+### Widening Casting 
+- Converting a lower data type into a higher one
+- also known as implicit conversion or casting down
+- It is done automatically
+- Its safe as no loss of data occurs 
+- most done when: 
+   -  Both data types must be compatible with each other.
+    - The target type must be larger than the source type.
+```java 
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
 
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+```
+---
+### Narrowing Casting
+- Converting a higher data type into a lower one
+- known as explicit conversion or casting up
+- done manually; if not done properly, throws complie time error 
+```java
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+  }
+}
+```
+----
