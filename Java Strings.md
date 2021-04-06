@@ -35,3 +35,9 @@ String firstName = "John";
 String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 ```
+---
+### Special Characters
+- use to create a special format to the string 
+```java 
+String txt = "We are the so-called "Vikings" from the north.";
+````
