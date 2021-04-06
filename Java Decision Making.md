@@ -1,12 +1,5 @@
----
-title: Java Decision Making
-created: '2021-04-05T19:18:17.993Z'
-modified: '2021-04-05T19:34:58.591Z'
----
 
 # Java Decision Making
-
-
 
 ### Java if Statement
 
