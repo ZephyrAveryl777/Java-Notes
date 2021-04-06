@@ -84,7 +84,19 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
         - information of all objects is stored in heap area. 
         - only one heaparea, shared resource.       
     - **Stacked area**:
-         - for every thread, one run-time stack is created by JVM and stored here. 
+         - for every thread, one run-time stack is created by JVM and stored here.
+         - Every block of stack is called activation record/stack frame which stores method calls and local variables. 
+         - after thread termination, runtime stack is destroyed by JVM, not a shared resource.  
+    - **PC Registers**: 
+        - Store address of current execution instruction of thread. 
+        - each thread has separate PC registers. 
+    - **Native method stack**:
+        - native stack is created for each thread to store native method information.
+<h3 align="center">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/jvm-memory-2.jpg" alt="Java Memory" height="300px">
+</h3>
+3. **Execution Engine**:
+    - 
          
 
  
