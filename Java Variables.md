@@ -88,3 +88,25 @@ System.out.println(x + y + z);
   -  Names are case sensitive ("myVar" and "myvar" are different variables)
   -  Reserved words (like Java keywords, such as int or boolean) cannot be used as names
 ---
+### Types of Variables 
+- **Local Variable**:
+  - variable declated inside the body of the method 
+  - can use this variable only within that method
+  - other methods in that class aren't aware of its existance.
+- **Instance Variable**:
+  - variables declared inside the class but outside the body of the method
+  - called instance variable because its value is instance specific and is not shared among instances.
+ - **Static Varibale**:
+    - variable which is declared as static is called static variable.
+    - can create single copy of static variable and share among all the instance of the class. 
+    - Memory allocation for static variable happens only once when class is loaded in the memory.
+```java 
+class A{  
+int data=50;//instance variable  
+static int m=100;//static variable  
+void method(){  
+int n=90;//local variable  
+}  
+}//end of class  
+````
+---
