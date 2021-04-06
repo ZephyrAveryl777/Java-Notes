@@ -30,6 +30,7 @@ JVM provides definitions for :
 
 ----
 ### Architecture of JVM
+
 <h3 align="center">
 <img src="https://static.javatpoint.com/images/jvm-architecture.png" alt="JVM structure" height="500px" align="center">
 <h3>
