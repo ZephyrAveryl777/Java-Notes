@@ -15,7 +15,7 @@ if(condition){
 
 ---
 
-### Go if-else
+### Java if-else
 
 - used to test condition
 - If condition is true, if block is executed otherwise else block is executed.
@@ -45,14 +45,12 @@ public static void main(String[] args) {
 }    
 }    
 ```
-Output:
+Output: odd number
 
-odd number
 ---
-
 ### Java if-else-if ladder Statement
 
-The if-else-if ladder statement executes one condition from multiple statements.
+- The if-else-if ladder statement executes one condition from multiple statements.
 
 ```java
 public class PositiveNegativeExample {    
@@ -68,12 +66,9 @@ public static void main(String[] args) {
 }    
 }    
 ```
-Output:
-
-NEGATIVE
+Output: NEGATIVE
 
 ---
-
 ### Java Nested if statement
 
 -  if block within another if block
@@ -94,13 +89,7 @@ public static void main(String[] args) {
     }    
 }}  
 ```
-
-Output:
-
-You are eligible to donate blood
-
-
-
+Output: You are eligible to donate blood
 
 ---
 
