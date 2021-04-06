@@ -33,9 +33,9 @@ JVM provides definitions for :
 <h3 align="center">
 <img src="https://static.javatpoint.com/images/jvm-architecture.png" alt="JVM structure" height="500px" align="center">
 <h3>
-<br>
+    
 Internal architecture of JVM is made of classloader,memory area, execution engine etc.
-
+    
 1. **Classloader**:
     - subsystem of JVM used to load class files. 
     - program first loaded by the classloader while running the program 
@@ -57,8 +57,9 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
         - static variables are assigned with their values defined in code and static block (if any).
         - executed from top to bottom in a class 
         - executed from parent to child in the class hierarchy.
-
+       
     - there are three buit-in classloaders: 
+   
  - **Bootstrap ClassLoader** : 
     - first classloader, super class of Extension classloader. 
     - loading of class files is done here 
@@ -67,6 +68,7 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
  - **Extension ClassLoader** :
     - child classloader of Bootstrap & parent classloader of System classloader 
     - loads the jar files located inside **`$JAVA_HOME/jre/lib/ext`** directory.
+   
  - **System/Application ClassLoader** :
     - child classloader of Extension classloader. 
     - loads the classfiles from classpath. 
@@ -95,8 +97,9 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
 <h3 align="center">
     <img src="https://media.geeksforgeeks.org/wp-content/uploads/jvm-memory-2.jpg" alt="Java Memory" height="300px">
 </h3>
+
 3. **Execution Engine**:
-    - 
+    - bjkjlkj
          
 
  
