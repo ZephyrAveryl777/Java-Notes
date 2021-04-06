@@ -12,7 +12,23 @@ if(condition){
 //code to be executed  
 }  
 ```
+<h3 align="center">
+    <img src="https://www.alphacodingskills.com/java/img/java-if.png" alt="if loop" height="475px">
+</h3>
 
+```java 
+//Java Program to demonstate the use of if statement.  
+public class IfExample {  
+public static void main(String[] args) {  
+    //defining an 'age' variable  
+    int age=20;  
+    //checking the age  
+    if(age>18){  
+        System.out.print("Age is greater than 18");  
+    }  
+}  
+}  
+```
 ---
 
 ### Java if-else
@@ -28,7 +44,26 @@ if(condition){
 //code if condition is false  
 }  
 ```
+<h3 align="center">
+    <img src="https://www.alphacodingskills.com/java/img/java-if-else.png" alt="if-else image" height="475px">
+</h3>
 
+```java 
+//A Java Program to demonstrate the use of if-else statement.  
+//It is a program of odd and even number.  
+public class IfElseExample {  
+public static void main(String[] args) {  
+    //defining a variable  
+    int number=13;  
+    //Check if the number is divisible by 2 or not  
+    if(number%2==0){  
+        System.out.println("even number");  
+    }else{  
+        System.out.println("odd number");  
+    }  
+}  
+}  
+```
 ---
 
 ### Using Ternary Operator
@@ -64,9 +99,12 @@ public static void main(String[] args) {
     System.out.println("ZERO");  
    }  
 }    
-}    
+} 
+// Output: NEGATIVE
 ```
-Output: NEGATIVE
+<h3 align="center">
+    <img src="https://www.alphacodingskills.com/java/img/java-if-elseif-else.png" alt="if-else ladder" height="475px">
+</h3>
 
 ---
 ### Java Nested if statement
@@ -87,9 +125,12 @@ public static void main(String[] args) {
             System.out.println("You are eligible to donate blood");  
         }    
     }    
-}}  
+}}
+// Output: You are eligible to donate blood
 ```
-Output: You are eligible to donate blood
+<h3 align="center">
+    <img src="https://www.javatpoint.com/corebasic/images/nestedif.png" alt="NestedIFExample" height="750px" width="20%">
+</h3>
 
 ---
 
