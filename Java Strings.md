@@ -41,3 +41,11 @@ System.out.println(firstName + " " + lastName);
 ```java 
 String txt = "We are the so-called "Vikings" from the north.";
 ````
+- \f : for inserting a formfeed.
+- \' : for inserting a quote character.
+- \" : for inserting a double quote character.
+- \\ : for inserting a backslash character.
+- \t : for inserting a tab.
+- \b : for inserting a backspace.
+- \n : for inserting a newline.
+- \r : for inserting a carriage return.
