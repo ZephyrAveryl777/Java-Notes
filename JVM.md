@@ -100,7 +100,22 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
 </h3>
 
 3. **Execution Engine**:
-    - bjkjlkj
-         
+    - executes the `**.class(bytecode)**` 
+    - reads bytecode line by line, uses data and information present in various memory area and executes instructions and has three parts.
+    - **Interpreter**:
+        - interprets the bytecode line by line & executes. 
+        - disadvantage, when one method called multiple times, everytime interpretation is required. 
+    - **Just-in-Time Compiler (JIT)**:
+        -   used to increase the efficiency of an interpreter.
+        -   compiles entire bytecode and changes it to native code. 
+    - **Garbage Collector**:
+        - destroys un-referenced objects. 
+       
+ 4. **Java Native Interface (JNI)**:
+    - interface that interacts with the Native Method Libraries 
+    - provides the native libraries(C,C++) required for the execution.
+    - enables JVM to call C/C++ libraries and vice versa, which may be specific to hardware.
+5. **Native Method Libraries**:
+    - collection of the Native Libraries(C,C++) required by the Execution Engine.
 
  
