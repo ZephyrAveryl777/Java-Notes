@@ -6,7 +6,7 @@
 - used to test the condition
 -  It executes the if block if condition is true
 
-```
+```java 
 //Syntax of If 
 if(condition){  
 //code to be executed  
@@ -20,7 +20,7 @@ if(condition){
 - used to test condition
 - If condition is true, if block is executed otherwise else block is executed.
 
-```
+```java
 //Syntax 
 if(condition){  
 //code if condition is true  
@@ -35,7 +35,7 @@ if(condition){
 
 -  ternary operator (? :) is a shorthand way to check the condition
 - If the condition is true, the result of ? is returned. But, if the condition is false, the result of : is returned.
-```
+```java
 public class IfElseTernaryExample {    
 public static void main(String[] args) {    
     int number=13;    
@@ -54,7 +54,7 @@ odd number
 
 The if-else-if ladder statement executes one condition from multiple statements.
 
-```
+```java
 public class PositiveNegativeExample {    
 public static void main(String[] args) {    
     int number=-13;    
@@ -79,9 +79,8 @@ NEGATIVE
 -  if block within another if block
 - the inner if block condition executes only when outer if block condition is true.
 
-
-
-```//Java Program to demonstrate the use of Nested If Statement.  
+```java
+//Java Program to demonstrate the use of Nested If Statement.  
 public class JavaNestedIfExample {    
 public static void main(String[] args) {    
     //Creating two variables for age and weight  
