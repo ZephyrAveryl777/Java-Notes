@@ -79,10 +79,10 @@ Internal architecture of JVM is made of classloader,memory area, execution engin
          - all class level information (class name,immediate parent class name, methods and variables information) are stored 
          - only one memory area per JVM & its a shared resource.        
     - **Heap area**: 
-            - information of all objects is stored in heap area. 
-            - only one heaparea, shared resource.       
+        - information of all objects is stored in heap area. 
+        - only one heaparea, shared resource.       
     - **Stacked area**:
-          - for every thread, one run-time stack is created by JVM and stored here. 
+         - for every thread, one run-time stack is created by JVM and stored here. 
          
 
  
