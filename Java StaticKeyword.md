@@ -63,8 +63,8 @@ s2.display();  
 }  
 /*
 Output:
-111 Karan IIT Goa
-222 Aryan IIT Goa
+111 Karan IIT ITS
+222 Aryan IIT ITS
 */
 ````
 
