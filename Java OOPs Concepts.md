@@ -25,6 +25,8 @@
 - it can be defined as a blueprint from which you can create an individual object
 - doesn't consume any space
 
+---
+
 **INHERITANCE**
 - When one object acquires all the properties and behaviors of a parent object, it is known as inheritance
 - provides code reusability
@@ -110,12 +112,14 @@ public class Test {
 	}
 }
 
-
-```
-- Output
+/*
+ Output
 	No of gears are 3
 	speed of bicycle is 100
 	seat height is 25
+*/
+````
+---
 
 **POLYMORPHISM**
 - If one task is performed in different ways, it is known as polymorphism
@@ -162,13 +166,14 @@ public class Sum {
 		System.out.println(s.sum(10.5, 20.5));
 	}
 }
-
-
-```
-- Output:
+/*
+Output:
 	30
 	60
 	31.0
+*/
+```
+---
 
 **ABSTRACTION**
 
@@ -253,14 +258,17 @@ public class Test {
 	}
 }
 
-```
-- Output
+/*
+Output
 	Shape constructor called
 	Circle constructor called
 	Shape constructor called
 	Rectangle constructor called
 	Circle color is Redand area is : 15.205308443374602
 	Rectangle color is Yellowand area is : 8.0
+*/
+```
+---
 
 **ENCAPSULATION**
 
@@ -325,14 +333,14 @@ public class TestEncapsulation {
 		// obj.geekName);
 	}
 }
-```
+/*
 - Output
 	Geek's name: Harsh
 	Geek's age: 19
 	Geek's roll: 51
 
-
-
-
+*/
+````
+---
 
 
