@@ -9,6 +9,16 @@
   <img src="https://beginnersbook.com/wp-content/uploads/2018/10/array.jpg" alt="array-image" height="258px">
 </h3>
 
-- Advantages
---- 
-### 
+- **Advantages**
+  	- **Code Optimization**: easy retrieve or storting of data.
+  	- **Random access**: get any data located at an index poistion.
+- **Disadvantages** : 
+  - **Size Limit**: 
+    - store only fixed size of elements in array.
+    - doesnot grow its size at runtime. 
+    - to make an array grow automatically collection framework is used 
+----
+### Types of Array
+- Single Dimensional Array 
+- Multi Dimensional Array 
+---
