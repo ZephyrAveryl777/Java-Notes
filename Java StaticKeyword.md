@@ -35,7 +35,7 @@ String college="IIT Goa";  // common property need not initate again hence st
 ````
 
 - static property is shared to all objects.
-- **Example **
+- **Example**
 ```java
 //Java Program to demonstrate the use of static variable  
 class Student{  
@@ -107,7 +107,8 @@ Output:
       -   A static method belongs to the class rather than the object of a class.
       -   A static method can be invoked without the need for creating an instance of a class.
       -   A static method can access static data member and can change the value of it.
-      -   **Example**
+     **Example**
+
 ```java
 //Java Program to demonstrate the use of a static method.  
 class Student{  
@@ -162,12 +163,9 @@ public static void main(String args[]){  
 System.out.println(a);  
 }  
 }        
-
 // Output:Compile Time Error
-
-```java
-
-* * * * *
+```
+---
 
 ### Java static block
 
@@ -180,12 +178,12 @@ public static void main(String args[]){  
 System.out.println("Hello main");  
 }  
 }  
-
-// Output:static block is invoked
+// Output:
+static block is invoked
        Hello main
 ```
 
-* * * * *
+---
 
 ### Can we execute a program without main() method?
 
