@@ -76,21 +76,21 @@ Output:
 - static variable will get the memory only once, 
 - if any object changes the value of the static variable, it will retain its value.
 ```java
-1.  //Java Program to illustrate the use of static variable which  
-2.  //is shared with all objects.  
-3.  class Counter2{  
-4.  static int count=0;//will get memory only once and retain its value  
-6.  Counter2(){  
-7.  count++;//incrementing the value of static variable  
-8.  System.out.println(count);  
-9.  }  
-11. public static void main(String args[]){  
-12. //creating objects  
-13. Counter2 c1=new Counter2();  
-14. Counter2 c2=new Counter2();  
-15. Counter2 c3=new Counter2();  
-16. }  
-17. }  
+//Java Program to illustrate the use of static variable which  
+//is shared with all objects.  
+class Counter2{  
+static int count=0;//will get memory only once and retain its value  
+Counter2(){  
+count++;//incrementing the value of static variable  
+System.out.println(count);  
+ }  
+public static void main(String args[]){  
+//creating objects  
+Counter2 c1=new Counter2();  
+Counter2 c2=new Counter2();  
+Counter2 c3=new Counter2();  
+}  
+}  
 /*
 Output:
 1
@@ -103,11 +103,10 @@ Output:
 ### Java static method
 
 - If you apply static keyword with any method, it is known as static method.
-
-      -   A static method belongs to the class rather than the object of a class.
-      -   A static method can be invoked without the need for creating an instance of a class.
-      -   A static method can access static data member and can change the value of it.
-     **Example**
+	-   A static method belongs to the class rather than the object of a class.
+	-   A static method can be invoked without the need for creating an instance of a class.
+	-   A static method can access static data member and can change the value of it.
+	-  **Example**
 
 ```java
 //Java Program to demonstrate the use of a static method.  
