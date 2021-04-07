@@ -19,8 +19,7 @@ modified: '2021-04-07T06:30:36.691Z'
 - Polymorphism
 - Abstraction
 - Encapsulation
-
-![](@attachment/Clipboard_2021-04-07-11-21-30.png)
+<img src="https://static.javatpoint.com/images/java-oops.png" alt="Decision Making in Go"  width="100%" height="500px%" align="left" />
 
 **OBJECT**
 - Any entity that has state and behavior
