@@ -24,11 +24,49 @@ public static void main(String[] args) {
 ```
 - **Multi Line Comment**:
   - comment multiple lines of code.
-  ```java 
-  // Syntax 
-  /* This  is  
-multi line  
+```java 
+/*
+This 
+is a
+multiple 
+line 
 comment 
-*/  
+*/
 ```
-- **Documentation Comment**
+  - Example 
+  ````java
+  public class CommentExample2 {  
+public static void main(String[] args) {  
+/* Let's declare and 
+ print variable in java. */  
+    int i=10;  
+    System.out.println(i);  
+}  
+}
+  ````
+- **Documentation Comment**:
+   - used to create documentation API.
+   - need javadoc tool 
+   - **Syntax**:
+   ```java
+   /** 
+  This  
+  is  
+  documentation  
+  comment 
+  */
+   ````
+  - Example:
+ ```java 
+ /** The Calculator class provides methods to get addition and subtraction of given 2 numbers.*/  
+public class Calculator {  
+/** The add() method returns addition of given numbers.*/  
+public static int add(int a, int b){return a+b;}  
+/** The sub() method returns subtraction of given numbers.*/  
+public static int sub(int a, int b){return a-b;}  
+}  
+// 
+Compile it by javac tool : javac Calculator.java
+create documentation API by javadoc tool: javadoc Calculator.java
+ ```
+----
