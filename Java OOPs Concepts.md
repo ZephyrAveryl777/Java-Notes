@@ -42,12 +42,87 @@ modified: '2021-04-07T06:30:36.691Z'
 - The keyword used for inheritance is extends.
 Syntax:
 ```java
-class derived-class extends base-class  
-{  
-   //methods and fields  
-}  
+// Java program to illustrate the
+// concept of inheritance
+
+// base class
+class Bicycle {
+	// the Bicycle class has two fields
+	public int gear;
+	public int speed;
+
+	// the Bicycle class has one constructor
+	public Bicycle(int gear, int speed)
+	{
+		this.gear = gear;
+		this.speed = speed;
+	}
+
+	// the Bicycle class has three methods
+	public void applyBrake(int decrement)
+	{
+		speed -= decrement;
+	}
+
+	public void speedUp(int increment)
+	{
+		speed += increment;
+	}
+
+	// toString() method to print info of Bicycle
+	public String toString()
+	{
+		return ("No of gears are " + gear + "\n"
+				+ "speed of bicycle is " + speed);
+	}
+}
+
+// derived class
+class MountainBike extends Bicycle {
+
+	// the MountainBike subclass adds one more field
+	public int seatHeight;
+
+	// the MountainBike subclass has one constructor
+	public MountainBike(int gear, int speed,
+						int startHeight)
+	{
+		// invoking base-class(Bicycle) constructor
+		super(gear, speed);
+		seatHeight = startHeight;
+	}
+
+	// the MountainBike subclass adds one more method
+	public void setHeight(int newValue)
+	{
+		seatHeight = newValue;
+	}
+
+	// overriding toString() method
+	// of Bicycle to print more info
+	@Override public String toString()
+	{
+		return (super.toString() + "\nseat height is "
+				+ seatHeight);
+	}
+}
+
+// driver class
+public class Test {
+	public static void main(String args[])
+	{
+
+		MountainBike mb = new MountainBike(3, 100, 25);
+		System.out.println(mb.toString());
+	}
+}
+
 
 ```
+- Output
+	No of gears are 3
+	speed of bicycle is 100
+	seat height is 25
 
 **POLYMORPHISM**
 - If one task is performed in different ways, it is known as polymorphism
@@ -97,10 +172,10 @@ public class Sum {
 
 
 ```
-Output:
-30
-60
-31.0
+- Output:
+	30
+	60
+	31.0
 
 **ABSTRACTION**
 
@@ -186,18 +261,82 @@ public class Test {
 }
 
 ```
-Output
-Shape constructor called
-Circle constructor called
-Shape constructor called
-Rectangle constructor called
-Circle color is Redand area is : 15.205308443374602
-Rectangle color is Yellowand area is : 8.0
+- Output
+	Shape constructor called
+	Circle constructor called
+	Shape constructor called
+	Rectangle constructor called
+	Circle color is Redand area is : 15.205308443374602
+	Rectangle color is Yellowand area is : 8.0
 
 **ENCAPSULATION**
 
 - wrapping up of data under a single unit
 - Encapsulation can be achieved by Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables
+```java
+// Java program to demonstrate encapsulation
+class Encapsulate {
+	// private variables declared
+	// these can only be accessed by
+	// public methods of class
+	private String geekName;
+	private int geekRoll;
+	private int geekAge;
+
+	// get method for age to access
+	// private variable geekAge
+	public int getAge() { return geekAge; }
+
+	// get method for name to access
+	// private variable geekName
+	public String getName() { return geekName; }
+
+	// get method for roll to access
+	// private variable geekRoll
+	public int getRoll() { return geekRoll; }
+
+	// set method for age to access
+	// private variable geekage
+	public void setAge(int newAge) { geekAge = newAge; }
+
+	// set method for name to access
+	// private variable geekName
+	public void setName(String newName)
+	{
+		geekName = newName;
+	}
+
+	// set method for roll to access
+	// private variable geekRoll
+	public void setRoll(int newRoll) { geekRoll = newRoll; }
+}
+
+public class TestEncapsulation {
+	public static void main(String[] args)
+	{
+		Encapsulate obj = new Encapsulate();
+
+		// setting values of the variables
+		obj.setName("Harsh");
+		obj.setAge(19);
+		obj.setRoll(51);
+
+		// Displaying values of the variables
+		System.out.println("Geek's name: " + obj.getName());
+		System.out.println("Geek's age: " + obj.getAge());
+		System.out.println("Geek's roll: " + obj.getRoll());
+
+		// Direct access of geekRoll is not possible
+		// due to encapsulation
+		// System.out.println("Geek's roll: " +
+		// obj.geekName);
+	}
+}
+```
+- Output
+	Geek's name: Harsh
+	Geek's age: 19
+	Geek's roll: 51
 
 
 
