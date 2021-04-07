@@ -11,9 +11,24 @@
 
 ### Types of Java Comments 
 
-- **Single Comment**: 
-  - single line comment 
+- **Single Comment**:  
   - used to comment only one line 
   - **Syntax**: `**// This is a single line comment**`
-- Multi Line Comment
-- Documentation Comment
+ ```java 
+ public class CommentExample1 {  
+public static void main(String[] args) {  
+    int i=10; //Here, i is a variable  
+    System.out.println(i); // Ouput is 10  
+}  
+} 
+```
+- **Multi Line Comment**:
+  - comment multiple lines of code.
+  ```java 
+  // Syntax 
+  /* This  is  
+multi line  
+comment 
+*/  
+```
+- **Documentation Comment**
