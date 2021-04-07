@@ -148,27 +148,6 @@ Output:111 Karan BBDIT
 ````
 * * * * *
 
-### Another example of a static method that performs a normal calculation
-
-[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)
-
-1.  //Java Program to get the cube of a given number using the static method  
-
-3.  class Calculate{  
-4.  static int cube(int x){  
- 5.  return x*x*x;  
-6.  }  
-
-8.  public static void main(String args[]){  
-9.  int result=Calculate.cube(5);  
-10. System.out.println(result);  
-11. }  
-12. }  
-
-[Test it Now](https://www.javatpoint.com/opr/test.jsp?filename=Calculate)
-
-Output:125
-
 ### Restrictions for the static method
 
 There are two main restrictions for the static method. They are:
@@ -176,73 +155,55 @@ There are two main restrictions for the static method. They are:
 1.  The static method can not use non static data member or call non-static method directly.
 2.  this and super cannot be used in static context.
 
-[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)
+```java
+class A{  
+int a=40;//non static  
+public static void main(String args[]){  
+System.out.println(a);  
+}  
+}        
 
-1.  class A{  
-2.  int a=40;//non static  
+// Output:Compile Time Error
 
-4.  public static void main(String args[]){  
-5.  System.out.println(a);  
-6.  }  
-7.  }        
-
-[Test it Now](https://www.javatpoint.com/opr/test.jsp?filename=A)
-
-Output:Compile Time Error
+```java
 
 * * * * *
 
-### Q) Why is the Java main method static?
-
-Ans) It is because the object is not required to call a static method. If it were a non-static method, [JVM](https://www.javatpoint.com/jvm-java-virtual-machine) creates an object first then call main() method that will lead the problem of extra memory allocation.
-
-* * * * *
-
-3) Java static block
---------------------
+### Java static block
 
 -   Is used to initialize the static data member.
 -   It is executed before the main method at the time of classloading.
+```java
+class A2{  
+static{System.out.println("static block is invoked");}  
+public static void main(String args[]){  
+System.out.println("Hello main");  
+}  
+}  
 
-### Example of static block
-
-[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)
-
-1.  class A2{  
-2.  static{System.out.println("static block is invoked");}  
-3.  public static void main(String args[]){  
-4.  System.out.println("Hello main");  
-5.  }  
-6.  }  
-
-[Test it Now](https://www.javatpoint.com/opr/test.jsp?filename=A2)
-
-Output:static block is invoked
+// Output:static block is invoked
        Hello main
+```
 
 * * * * *
 
-### Q) Can we execute a program without main() method?
+### Can we execute a program without main() method?
 
-Ans) No, one of the ways was the static block, but it was possible till JDK 1.6. Since JDK 1.7, it is not possible to execute a Java class without the [main method](https://www.javatpoint.com/java-main-method).
-
-[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)[](https://www.javatpoint.com/static-keyword-in-java#)
-
-1.  class A3{  
-2.  static{  
-3.  System.out.println("static block is invoked");  
-4.  System.exit(0);  
-5.  }  
-6.  }  
-
-[Test it Now](https://www.javatpoint.com/opr/test.jsp?filename=A3)
-
+ - No, one of the ways was the static block, but it was possible till JDK 1.6. Since JDK 1.7, it is not possible to execute a Java class without the main method
+```java
+class A3{  
+static{  
+System.out.println("static block is invoked");  
+System.exit(0);  
+}  
+}  
+/*
 Output:
-
 static block is invoked
-
 Since JDK 1.7 and above, output would be:
-
 Error: Main method not found in class A3, please define the main method as:
    public static void main(String[] args)
 or a JavaFX application class must extend javafx.application.Application
+*/
+```
+---
