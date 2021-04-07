@@ -1,9 +1,3 @@
----
-title: 'Inheritance, Polymorphism, Interfaces'
-created: '2021-04-07T07:26:34.890Z'
-modified: '2021-04-07T16:45:09.126Z'
----
-
 # Inheritance, Polymorphism, Interfaces
 
 **INHERITNCE**
