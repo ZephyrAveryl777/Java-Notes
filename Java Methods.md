@@ -25,13 +25,26 @@
             -   **Protected:** When we use protected access specifier, the method is accessible within the same package or subclasses in a different package.
             -   **Default:** When we do not use any access specifier in the method declaration, Java uses default access specifier by default. It is visible only from the same package only.
 
-            - **Return Type:** Return type is a data type that the method returns. It may have a primitive data type, object, collection, void, etc. If the method does not return anything, we use void keyword.
+    - **Return Type:** 
+    	- is a data type that the method returns. 
+    	- may have a primitive data type, object, collection, void, etc. 
+    	- for the method to not return anything, use void keyword.
 
-            - **Method Name:** It is a unique name that is used to define the name of a method. It must be corresponding to the functionality of the method. Suppose, if we are creating a method for subtraction of two numbers, the method name must be **subtraction().** A method is invoked by its name.
+    - **Method Name:** 
+    	- is a unique name that is used to define the name of a method.
+    	-  It must be corresponding to the functionality of the method. 
+    	-  **Example**:  **subtraction().**
+    	-   A method is invoked by its name.
 
-            - **Parameter List:** It is the list of parameters separated by a comma and enclosed in the pair of parentheses. It contains the data type and variable name. If the method has no parameter, left the parentheses blank.
+    - **Parameter List:** 
+    	- is the list of parameters separated by a comma and enclosed in the pair of parentheses.
+    	- contains the data type and variable name. 
+    	- If method has no parameter, leave the  parentheses blank.
 
-            - **Method Body:** It is a part of the method declaration. It contains all the actions to be performed. It is enclosed within the pair of curly braces.
+    - **Method Body:** 
+    	- a part of the method declaration. 
+    	- contains all the actions to be performed.  
+    	- is enclosed within the pair of curly braces.
 
 --- 
 
@@ -164,8 +177,7 @@ return s;  
 Output:
 The sum is: 25
 */
-```java
-
+````
 - There are two types of instance method:
 
     -   **Accessor Method**
@@ -188,8 +200,7 @@ return Id;    
 	- can easily identify it because the method is prefixed with the word **set**. It is also known as **setters** or **modifiers**. 
 	- does not return anything, accepts a parameter of the same data type that depends on the field
 	-  is used to set the value of the private field.
-
-**Example**
+	-  **Example**
 ```java
 public class Student   
 {  
