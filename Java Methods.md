@@ -13,7 +13,6 @@
 
 ![Method in Java](https://static.javatpoint.com/core/images/method-in-java.png)
 
-
 - **Method Signature:** 
 		- Every method has a method signature as a part of the method declaration, includes the **method name** and **parameter list**.
 	- **Access Specifier:**
@@ -105,8 +104,7 @@ else   
 System.out.println(num+" is odd");  
 }  
 }  
-
-```
+````
 ---
 
 ### Static Method
@@ -166,7 +164,8 @@ return s;  
 Output:
 The sum is: 25
 */
-````
+```java
+
 - There are two types of instance method:
 
     -   **Accessor Method**
@@ -178,98 +177,80 @@ The sum is: 25
 		- returns the value of the private field. It is used to get the value of the private field.
 **Example**
 ```java
-1.  public int getId()    
-2.  {    
-3.  return Id;    
-4.  }    
+public int getId()    
+{    
+return Id;    
+}  
 ```
-- **Mutator Method:** The method(s) read the instance variable(s) and also modify the values. We can easily identify it because the method is prefixed with the word **set**. It is also known as **setters** or **modifiers**. It does not return anything. It accepts a parameter of the same data type that depends on the field. It is used to set the value of the private field.
+
+- **Mutator Method:** 
+	- The method(s) read the instance variable(s) and also modify the values.
+	- can easily identify it because the method is prefixed with the word **set**. It is also known as **setters** or **modifiers**. 
+	- does not return anything, accepts a parameter of the same data type that depends on the field
+	-  is used to set the value of the private field.
 
 **Example**
-
-[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)
-
-1.  public void setRoll(int roll)   
-2.  {  
-3.  this.roll = roll;  
-4.  }  
-
-### Example of accessor and mutator method
-
-**Student.java**
-
-[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)
-
-1.  public class Student   
-2.  {  
-3.  private int roll;  
-4.  private String name;  
-5.  public int getRoll()    //accessor method  
-6.  {  
-7.  return roll;  
-8.  }  
-9.  public void setRoll(int roll) //mutator method  
-10. {  
-11. this.roll = roll;  
-12. }  
-13. public String getName()   
-14. {  
-15. return name;  
-16. }  
-17. public void setName(String name)   
-18. {  
-19. this.name = name;  
-20. }  
-21. public void display()  
-22. {  
-23. System.out.println("Roll no.: "+roll);  
-24. System.out.println("Student name: "+name);  
-25. }  
-26. }  
+```java
+public class Student   
+{  
+private int roll;  
+private String name;  
+public int getRoll()    //accessor method  
+{  
+return roll;  
+}  
+public void setRoll(int roll) //mutator method  
+{  
+this.roll = roll;  
+}  
+public String getName()   
+{  
+return name;  
+}  
+public void setName(String name)   
+{  
+this.name = name;  
+}  
+public void display()  
+{  
+System.out.println("Roll no.: "+roll);  
+System.out.println("Student name: "+name);  
+}  
+}  
+``` 
+---
 
 ### Abstract Method
 
-The method that does not has method body is known as abstract method. In other words, without an implementation is known as abstract method. It always declares in the **abstract class**. It means the class itself must be abstract if it has abstract method. To create an abstract method, we use the keyword **abstract**.
-
-**Syntax**
-
-[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)
-
-1.  abstract void method_name();  
-
-### Example of abstract method
-
-**Demo.java**
-
-[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)[](https://www.javatpoint.com/method-in-java#)
-
-1.  abstract class Demo //abstract class  
-2.  {  
-3.  //abstract method declaration  
-4.  abstract void display();  
-5.  }  
-6.  public class MyClass extends Demo  
-7.  {  
-8.  //method impelmentation  
-9.  void display()  
-10. {  
-11. System.out.println("Abstract method?");  
-12. }  
-13. public static void main(String args[])  
-14. {  
-15. //creating object of abstract class  
-16. Demo obj = new MyClass();  
-17. //invoking abstract method  
-18. obj.display();  
-19. }  
-20. }  
-
-**Output:**
-
+- A method that does not has method body is known as abstract method. 
+- always declares in the **abstract class**,  the class itself must be abstract if it has abstract method. 
+- To create an abstract method, we use the keyword **abstract**.
+- **Syntax** `abstract void method_name()`;  
+- **Example**
+```java
+abstract class Demo //abstract class  
+{  
+//abstract method declaration  
+abstract void display();  
+}  
+public class MyClass extends Demo  
+{  
+//method impelmentation  
+void display()  
+{  
+System.out.println("Abstract method?");  
+}  
+public static void main(String args[])  
+{  
+//creating object of abstract class  n
+Demo obj = new MyClass();  
+//invoking abstract method  
+obj.display();  
+}  
+}  
+/*
+Output:
 Abstract method...
-
-### Factory method
-
-It is a method that returns an object to the class to which it belongs. All static methods are factory methods. For example, **NumberFormat obj = NumberFormat.getNumberInstance();**
-
-* * * * *
+*/
+```
+---
