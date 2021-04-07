@@ -1,10 +1,3 @@
----
-attachments: [Clipboard_2021-04-07-11-21-30.png, java-oops.png]
-title: Java OOPs Concepts
-created: '2021-04-07T05:45:43.588Z'
-modified: '2021-04-07T06:30:36.691Z'
----
-
 # Java OOPs Concepts
 
 - Main aim of object-oriented programming is to implement real-world entities
