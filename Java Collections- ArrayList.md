@@ -9,7 +9,7 @@ modified: '2021-04-08T10:54:44.772Z'
 - The Java Collections Framework is a collection of interfaces and classes which helps in storing and processing the data efficiently
 
 
- <img src="https://beginnersbook.com/wp-content/uploads/2013/12/Java-collection-framework-hierarchy.png" alt="Decision Making in Go"  width="50%" height="100px%" align="center" />
+ <img src="https://beginnersbook.com/wp-content/uploads/2013/12/Java-collection-framework-hierarchy.png" alt="Decision Making in Go"  width="100%" height="500px%" align="center" />
 
  **Java Collections – List**
  - an ordered Collection
@@ -25,9 +25,9 @@ modified: '2021-04-08T10:54:44.772Z'
 
  - ArrayList can dynamically grow and shrink after addition and removal of elements
 
- <img src="https://beginnersbook.com/wp-content/uploads/2013/12/Adding_Element_ArrayList_diagram.png" alt="Decision Making in Go"  width="50%" height="100px%" align="center" />
+ <img src="https://beginnersbook.com/wp-content/uploads/2013/12/Adding_Element_ArrayList_diagram.png" alt="Decision Making in Go"  width="100%" height="500px%" align="center" />
 
- <img src="https://beginnersbook.com/wp-content/uploads/2013/12/Removing_Element_from_ArrayList_diagram.png" alt="Decision Making in Go"  width="50%" height="100px%" align="center" />
+ <img src="https://beginnersbook.com/wp-content/uploads/2013/12/Removing_Element_from_ArrayList_diagram.png" alt="Decision Making in Go"  width="100%" height="500px%" align="center" />
 ---
  **How to create an ArrayList?**
 
